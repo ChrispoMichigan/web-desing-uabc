@@ -1,0 +1,157 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    /*# font-size: 62.5%; <-- 1 rem = 10px  */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: black;
+}
+
+p {
+    line-height: 1.5;
+}
+
+* {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+    color: white;
+}
+
+h4 {
+    margin: 1rem 0;
+}
+
+/** Utilities */
+
+/** nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    letter-spacing: 1px;
+    padding: 0 0 0 4rem;
+}
+
+nav a {
+    color: black;
+}
+
+.nav__links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav__login {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.link__subs {
+    background-color: #ffcc00;
+    padding: 23px;
+}
+
+.main-news,
+.segundary-news {
+    margin-top: 1rem;
+}
+
+.segundary-news__img {
+    max-width: 40rem;
+}
+
+.segundary-news-text,
+.extra-news-text {
+    padding: 1rem;
+}
+
+/* .extra-new {
+    border: 1px solid red;
+} */
+
+.extra-new__img {
+    max-width: 5rem;
+}
+
+.news-flex {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.news-container {
+    width: 65%;
+}
+
+.extra-news {
+    width: 35%;
+}
+
+.secundary-news-container {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: none;
+    }
+
+    nav {
+        padding: 0.5rem 0;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__logo {
+        margin-left: 1rem;
+    }
+
+    .news-flex {
+        flex-direction: column;
+    }
+
+    .news-container {
+        width: 100%;
+    }
+
+    .extra-news {
+        width: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+
+/** Global  */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/** Utilities */
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+/** Header */
+header {
+    background-color: cornflowerblue;
+    height: 250px;
+}
+
+header h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+}
+
+header nav {
+    text-align: center;
+}
