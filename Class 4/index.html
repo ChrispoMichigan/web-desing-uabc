@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>ToDo App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container_add">
+                <p>Personal</p>
+                <input type="text" id="inputTextPersonal" placeholder="your personal task">
+                <button id="addBtnPersonal">Add</button>
+                <small id="taskErrorPersonal" class="alert-error"></small>
+            </div>
+            <div class="container_add">
+                <p>Professional</p>
+                <input type="text" id="inputTextProfessional" placeholder="your professional task">
+                <button id="addBtnProfessional">Add</button>
+                <small id="taskErrorProfessional" class="alert-error"></small>
+            </div>
+        </div>
+    </main>
+
+    <section class="tasks">
+        <!-- Personal ToDo -->
+        <ul id="taskListPersonal">
+            
+        </ul>
+        <!-- Profesional ToDo -->
+        <ul id="taskListProfessional">
+
+        </ul>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
