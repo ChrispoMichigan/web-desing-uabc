@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Form of contact</h1>
+        <form>
+            <div class="field">
+                <label>Name</label>
+                <input name="name" id="name" type="text" placeholder="your name">
+                <span id="error_name" class="error"></span>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input id="email" type="email" placeholder="email@gmail.com">
+                <span id="error_email" class="error"></span>
+            </div>
+            <div class="field">
+                <label>Phone Number</label>
+                <input id="phone-number" type="tel" placeholder="6651523269">
+                <span id="error_phone_number" class="error"></span>
+            </div>
+            <div class="field">
+                <button type="submit">Send</button>
+                <span id="error_button" class="error"></span>
+            </div>
+        </form>
+    </main>
+</body>
+    <script src="script.js"></script>
+</html>

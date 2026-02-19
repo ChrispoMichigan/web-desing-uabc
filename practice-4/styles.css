@@ -1,0 +1,104 @@
+:root {
+    --bg-color: #291e62;
+    --bg-input: #f9e6fa;
+    --text-color: #f9e6fa;
+    --font: "Indie Flower";
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    background-color: var(--bg-input);
+    border: 0.5rem solid var(--bg-input);
+    border-radius: 2rem;
+    height: 3rem;
+    text-align: center;
+}
+
+input:hover {
+    border-bottom: 1rem solid var(--bg-input);
+}
+
+label {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+button {
+    color: var(--bg-input);
+    background-color: var(--bg-color);
+    border: 0.2rem solid var(--bg-input);
+    border-radius: 2rem;
+    height: 4rem;
+    width: 8rem;
+}
+
+button:hover {
+    background-color: var(--bg-input);
+    border-color: var(--bg-color);
+    color: var(--bg-color);
+}
+
+span {
+    color: red;
+    font-size: 1.5rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    input {
+        height: 5rem;
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 3rem;
+    }
+
+    button {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+}
