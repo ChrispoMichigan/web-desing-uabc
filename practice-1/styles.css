@@ -36,6 +36,16 @@ header {
     margin: auto 5rem;
 }
 
+@media (max-width: 768px) {
+    header {
+        display: flex;
+    }
+
+    .presentation h1 {
+        padding: 1rem;
+    }
+}
+
 main {
     background-color: var(--secundary);
     border-radius: 2rem;
